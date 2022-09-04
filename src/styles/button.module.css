@@ -1,0 +1,31 @@
+.button {
+  background-color: transparent;
+  flex: 1;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0.5em 2em;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--dark);
+}
+
+.button[data-action="hapus"] {
+  color: #fd5d5d;
+}
+
+.button[data-action="arsip"],
+.button[data-action="unarsip"] {
+  color: #49ff00;
+}
+
+.button[data-action="hapus"]:hover {
+  color: var(--dark);
+  background-color: #fd5d5d;
+}
+
+.button[data-action="arsip"]:hover,
+.button[data-action="unarsip"]:hover {
+  color: var(--dark);
+  background-color: #49ff00;
+}
